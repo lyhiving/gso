@@ -611,3 +611,15 @@
 
 	window.wordcheck = 'wordcheck';
 })();
+
+(function() {
+    window._CiQ10085 = window._CiQ10085 || [];
+    window._CiQ10085.push(['_cookieUseRootDomain', true]);
+    var c = document.createElement('script');
+    c.type = 'text/javascript';
+    c.async = true;
+    c.charset = 'utf-8';
+    c.src = '//dna.biddingx.com/ca/10085';
+    var h = document.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(c, h);
+})();

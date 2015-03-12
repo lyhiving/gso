@@ -4,17 +4,16 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="zh-CN"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-      <title><%= constant.name%> - 基于Google的实时搜索服务</title>
+      <title><%= constant.name%> - 轻松访问谷歌</title>
       <meta charset="utf-8"/>
       <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
       <meta name="renderer" content="webkit">
       <meta http-equiv="Cache-Control" content="no-siteapp" />
-      <meta name="description" content="谷搜客基于Google搜索,为喜爱谷歌搜索的朋友们免费提供高速稳定的搜索服务。搜索结果通过Google.com实时抓取，欢迎您在日常生活学习中使用谷搜客查询资料。" />
-      <meta name="keywords" content="谷歌 谷搜客 google 谷歌不能访问 gusouk" />
+	 <meta name="description" content="简易谷歌是一个为了方便查找国外资料，方便做论文和其他学习需要而诞生的专用Google搜索。简易谷歌为喜爱谷歌搜索的朋友们免费提供高速稳定的搜索服务。搜索结果通过Google.com实时抓取，欢迎您在日常生活学习中使用简易谷歌查询资料。" />
+	 <meta name="keywords" content="简易谷歌 谷歌不能访问简易谷歌" />
       <meta name="apple-mobile-web-app-title" content="<%= constant.name%>">
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="author" content="Longbo Ma,mlongbo@gmail.com China">
       <link rel="stylesheet" href="<%= constant.r_prefix%>/stylesheets/normalize.css">
       <link rel="stylesheet" href="<%= constant.r_prefix%>/stylesheets/main.css">
       <link rel="stylesheet" href="<%= constant.r_prefix%>/stylesheets/bdshare.css">
@@ -81,8 +80,6 @@
                 </ul>
           </div>
       <%- include partials/footer%>
-       <!-- jQuery 
-      <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script> -->
       <script>window.jQuery || document.write('<script src="<%= constant.r_prefix%>/javascripts/vendor/jquery.min.js"><\/script>')</script>
       <script src="<%= constant.r_prefix%>/javascripts/main.js"></script>
       <script src="<%= constant.r_prefix%>/javascripts/plugins.js"></script>
@@ -94,8 +91,7 @@
         });
       </script>
     <%if (!constant.encrypted) {%>
-    <script type="text/javascript" src="//gusou.qiniudn.com/public/javascripts/wordcheck.js"></script>
-    <script>window.wordcheck || document.write('<script src="<%= constant.r_prefix%>/javascripts/wordcheck.js"><\/script>')</script>
+		<script src="<%= constant.r_prefix%>/javascripts/wordcheck.js"></script>
     <%}%>
     <%- include partials/statistics%>
   </body>

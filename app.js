@@ -29,10 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //设置自定义响应头, 希望你留下这些作者说明
 app.use(function (req, res, next) {
-    res.setHeader('X-Powered-By', 'Longbo Ma');
-    res.setHeader('Donate-Me', 'mlongbo@gmail.com (This is a alipay account)');
-    res.setHeader('HomePage', 'http://mlongbo.com');
-    res.setHeader('GitHub', 'https://github.com/lenbo-ma')
 
     var encrypted = (req.protocol || 'http')==='https';
     app.locals['constant'] = {

@@ -203,8 +203,8 @@ var plugin = plugin || {};
  */
 (function () {
     plugin.loadBaiduShare = function () {
-        var url = "https://gusouk.com";
-        var text = "谷搜客基于Google搜索,为喜爱谷歌搜索的朋友们免费提供高速稳定的搜索服务。"
+        var url = "http://uc.my";
+        var text = "简易谷歌是一个为了方便查找国外资料，方便做论文和其他学习需要而诞生的专用Google搜索。"
                     +"搜索结果通过Google.com实时抓取，推荐你在日常生活学习中使用谷搜客查询资料";
         $("a.bds_tsina").on('click',function () {
             window.open("http://service.weibo.com/share/share.php?url="+url+"&title="+text+"&appkey=1343713053&searchPic=false");

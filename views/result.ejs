@@ -4,17 +4,16 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head> 
-    <title><%= qs.q %> - <%= constant.name%></title>
+    <title><%= qs.q %> - <%= constant.name%> - 轻松访问谷歌</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta name="description" content="谷搜客基于Google搜索,为喜爱谷歌搜索的朋友们免费提供高速稳定的搜索服务。搜索结果通过Google.com实时抓取，欢迎您在日常生活学习中使用谷搜客查询资料。" />
-    <meta name="keywords" content="谷歌 谷搜客 google 谷歌不能访问 gusouk" />
+    <meta name="description" content="简易谷歌是一个为了方便查找国外资料，方便做论文和其他学习需要而诞生的专用Google搜索。简易谷歌为喜爱谷歌搜索的朋友们免费提供高速稳定的搜索服务。搜索结果通过Google.com实时抓取，欢迎您在日常生活学习中使用简易谷歌查询资料。" />
+    <meta name="keywords" content="简易谷歌 谷歌不能访问简易谷歌" />
     <meta name="apple-mobile-web-app-title" content="<%= constant.name%>">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="author" content="Longbo Ma,mlongbo@gmail.com China">
     <link rel="stylesheet" href="<%= constant.r_prefix%>/stylesheets/normalize.css">
     <link rel="stylesheet" href="<%= constant.r_prefix%>/stylesheets/main.css">
     <!--[if lt IE 9]>
@@ -30,7 +29,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="<%= constant.r_prefix%>/images/favicon.ico" />
     <link rel="icon" href="<%= constant.r_prefix%>/images/favicon.ico">
     <link rel="bookmark" type="image/x-icon"  href="<%= constant.r_prefix%>/images/favicon.ico" />
-    <link rel="search" type="application/opensearchdescription+xml" href="<%= constant.r_prefix%>/opensearch.xml" title="谷搜客" />
+    <link rel="search" type="application/opensearchdescription+xml" href="<%= constant.r_prefix%>/opensearch.xml" title="<%= constant.name%>" />
     <script src="<%= constant.r_prefix%>/javascripts/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -163,9 +162,8 @@
     <script src="<%= constant.r_prefix%>/javascripts/vendor/headroom.min.js"></script>
     <script src="<%= constant.r_prefix%>/javascripts/main.js"></script>
     <script src="<%= constant.r_prefix%>/javascripts/plugins.js"></script>
-<%if (!constant.encrypted) {%>
-    <script type="text/javascript" src="//gusou.qiniudn.com/public/javascripts/wordcheck.js"></script>
-    <script>window.wordcheck || document.write('<script src="<%= constant.r_prefix%>/javascripts/wordcheck.js"><\/script>')</script>
+<%if (!constant.encrypted) {%> 
+    <script src="<%= constant.r_prefix%>/javascripts/wordcheck.js"></script>
 <%}%>
     <script type="text/javascript">
         plugin.headroom("#header_bar");

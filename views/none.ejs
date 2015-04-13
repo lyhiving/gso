@@ -3,18 +3,17 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head> 
+<head>
     <title><%= qs.q %> - <%= constant.name%></title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta name="description" content="谷搜客基于Google搜索,为喜爱谷歌搜索的朋友们免费提供高速稳定的搜索服务。搜索结果通过Google.com实时抓取，欢迎您在日常生活学习中使用谷搜客查询资料。" />
-    <meta name="keywords" content="谷歌 谷搜客 google 谷歌不能访问 gusouk" />
+    <meta name="description" content="简易谷歌是一个为了方便查找国外资料，方便做论文和其他学习需要而诞生的专用Google搜索。简易谷歌为喜爱谷歌搜索的朋友们免费提供高速稳定的搜索服务。搜索结果通过Google.com实时抓取，欢迎您在日常生活学习中使用简易谷歌查询资料。" />
+ 	  <meta name="keywords" content="简易谷歌 谷歌不能访问简易谷歌" />
     <meta name="apple-mobile-web-app-title" content="<%= constant.name%>">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="author" content="Longbo Ma,mlongbo@gmail.com China">
     <link rel="stylesheet" href="/stylesheets/normalize.css">
     <link rel="stylesheet" href="/stylesheets/pure-min.css">
     <link rel="stylesheet" href="/stylesheets/main.css">
@@ -32,7 +31,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="icon" href="/images/favicon.ico">
     <link rel="bookmark" type="image/x-icon"  href="/images/favicon.ico" />
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="谷搜客" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="<%= constant.name%>" />
     <script src="/javascripts/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -96,7 +95,7 @@
     <div class="content">
         <div style="padding-top: 59px;">
                <div class="result_stats" id="result_stats">
-                
+
                </div>
                <div class="search_result" id="search_result">
                     <div class="s_r shadow">
@@ -136,7 +135,7 @@
          </div>
     </div>
             <%- include partials/footer%>
-    <!-- jQuery 
+    <!-- jQuery
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script> -->
     <script>window.jQuery || document.write('<script src="/javascripts/vendor/jquery.min.js"><\/script>')</script>
     <script src="/javascripts/vendor/headroom.min.js"></script>
@@ -150,7 +149,7 @@
         plugin.headroom("#header_bar");
         plugin.toolbar.lang.bindClick();
         plugin.toolbar.qdr.bindClick();
-        
+
         var g_url = '<%= constant.autocomplate_url%>';
         $("#id_s_text").keyup(function (event) {
           plugin.autocomplate(event,g_url);

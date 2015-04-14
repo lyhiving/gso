@@ -74,8 +74,8 @@ app.use(function(req, res, next) {
 /// error handlers
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    console.error(err.message.red);
-    console.error(err.stack);
+  //  console.error(err.message.red);
+    //console.error(err.stack);
     res.render('500', {
         message: err.message,
         error: {}
